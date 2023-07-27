@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diablo Fans</title>
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Diablo Fans</h1>
+    </header>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <menu>
+        <ul>
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>Notícias</li>
+            <li><a href="#"></a>Builds</li>
+            <li><a href="#"></a>Tier list</li>
+            <li><a href="#"></a>Itens</li>
+            <li><a href="#"></a>Fale Conosco</li>
+        </ul>
+    </menu>
+    <main>
+        <div id="capas">
+            <picture>
+                <img src="imagens/renegada.jpg" alt="">
+                <img src="imagens/barbaro.jpg" alt="">
+                <img src="imagens/Necromancer.jpg" alt="">
+                <img src="imagens/maga.jpg" alt="">
+                <img src="imagens/druida.jpg" alt="">
+            </picture>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'  
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>   
+</body>
+</html>
