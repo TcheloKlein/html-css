@@ -11,13 +11,14 @@ body , html {
     background-color: rgb(80, 80, 80);
 }
 header {
-    background-color: darkred;
+    background-image: linear-gradient(to bottom, darkred, rgb(71, 71, 71)) ;
     height: 200px;
 }
 header > h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    font-size: 4em;
+    font-size: 65px;
+    text-shadow: 1px 1px white;
     margin: auto;
     padding-top: 60px;
 }
@@ -61,13 +62,14 @@ main {
 }
 
 img {
-    width: 600px;
-    display: block;
+    width: 500px;
     margin: auto;
-    margin-left: 10px;
-    padding: 10px;
-    box-sizing:content-box;
-    border: 5px;
-    border-radius: 10px;
+    padding: auto;
+}
+footer {
+    background-color: darkred;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
     
 }
