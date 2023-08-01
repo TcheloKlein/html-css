@@ -1,75 +1,155 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'belgiano serif';
+    src: url(../fonts/Belgiano\ Serif\ 2.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box;  
 }
 
 body , html {
-    background-color: rgb(80, 80, 80);
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
 }
 header {
-    background-image: linear-gradient(to bottom, darkred, rgb(71, 71, 71)) ;
-    height: 200px;
+    background-image: linear-gradient(to bottom, #FFB30D, #085454) ;
+    height: 200pz;
 }
 header > h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'belgiano serif', times, serif;
     text-align: center;
     font-size: 65px;
-    text-shadow: 1px 1px white;
+    color: #FFFFFF;
+    text-shadow: 1px 1px black;
     margin: auto;
     padding-top: 60px;
 }
-
-i#burguer {
-    background-color: rgb(48, 48, 48);
-    color: white;
-    display: block;
-    text-align: center;
+header > h2 {
+    font-family: 'belgiano serif', times, serif;
+    color: #FFFFFF;
     padding: 10px;
-    cursor: pointer;
+    text-shadow: 1px 1px black;
+    text-align: center;
 }
-
-i#burguer:hover {
-    background-color: rgba(255, 255, 255, 0.582);
-    color: black;  
-}
-
-menu {
-    display: block;
-}
-
-menu > ul > li {
+menu > ul > li > a{
     display: block;
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(66, 66, 66);
+    background-color: #122d66;
     color: white;
-    border-top: 2px solid black;
+    border-top: 2px solid #085454;
 }
-
 menu > ul >li a:hover {
-    background-color: lightgray;
-    color: black;
-
+    background-color: #FFB30D;
+    color: #085454;
 }
-
 main {
-    width: 90vw;
+    background-color: #085454;
+    position: absolute;
+    width: 100vw;   
 }
-
-img {
+main > section > div#box1 {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(172, 84, 84);
     width: 500px;
+    height: 400px;
     margin: auto;
-    padding: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+main > section > div#box2 {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(172, 84, 84);
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+main > section > div#box3 {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(172, 84, 84);
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+main > section > div#box4 {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(172, 84, 84);
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+div#box1 {
+    background-image: url(../imagens/1.jpg);
+    background-position: center;
+    position: absolute;
+    width: 6000px;
+    height: 00px;
+    background-color: #085454; 
+    overflow: hidden;
+}
+div#box2 {
+    background-image: url(../imagens/2.jpg);
+    background-position: center;
+    position: absolute;
+    width: 6000px;
+    height: 00px;
+    background-color: #085454; 
+    overflow: hidden;
+}
+div#box3 {
+    background-image: url(../imagens/3.jpg);
+    background-position: center;
+    position: absolute;
+    width: 600px;
+    height: 1700px;
+    background-color: #085454; 
+    overflow: hidden;
+}
+div#box4 {
+    background-image: url(../imagens/4.jpg);
+    background-position: center;
+    background-color: white;
+    width: 260px;
+    height: 495px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
 }
 footer {
-    background-color: darkred;
+    background-color: rgba(0, 0, 0, 0.582);
+    color: lightgray;
     font-weight: bolder;
     text-decoration: none;
-    text-align: center;
-    
+    text-align: center;   
 }
