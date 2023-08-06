@@ -1,91 +1,125 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 
 :root {
-    --fonte1: verdana, geneva, tahoma, sans-serif;
-    --fonte2: 'Passion One', cursive;
-    --fonte3: 'Sriracha', cursive;
+  --fonte1: verdana, geneva, tahoma, sans-serif;
+  --fonte2: "Passion One", cursive;
+  --fonte3: "Sriracha", cursive;
 }
 
 * {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
-body , html {
-    width: 100vw;
-    height: 100vh;
+body,
+html {
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
-    background-color: #253C59;
-    color: white;
-    text-align: center;
+  background-color: #253c59;
+  color: white;
 }
 
 header > h1 {
-    padding-top: 50px;
-    font-size: 70px;
-    text-shadow: 2px 2px 2px solid black;
+  text-align: center;
+  padding: 50px;
+  font-size: 70px;
+  text-shadow: 2px 2px 2px solid black;
+}
+
+main {
+    width: 60vw;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+}
+
+menu {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer
 }
 
 menu > ul {
-    padding: auto;
-    text-align: center;
-    text-overflow: clip;
+    cursor: pointer
+}
+
+menu > ul > li {
+    display: inline-block;
+    width: 150px;
 }
 
 menu > ul > li > a {
-    border-radius: 5px;
-    background-color: #99B4BF;
-    color: #253C59;
+    padding: 5px;
+    display: grid;
     text-decoration: none;
+    text-align: center;
+    background-color: #2d4453;
+    color: white;
+    border-radius: 10px;
+    border-top: px solid black;
+}
+
+menu > ul > li a:hover {
+    background-color: #406899;
+    color: white;
 }
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
-    font-size: 3.5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
 }
 
-section.normal {
-    height: 200px;
+section.normal#um {
+  height: 400px;
+  text-align: center;
+  background-color: #58788c;
+  border-radius: 10px 10px 0px 0px;
+}
+
+section.normal#dois {
+    height: 400px;
     text-align: center;
-    background-color: #58788C;
+    background-color: #58788c;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+main > section > p {
+  color: white;
+  font-size: 20px;
 }
 
-section > p {
-    color: white;
-    font-size: 30px;
-}
-
-section.imagem {
-    background-color:rgb(54, 54, 54);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.699);
-    background-size: cover;
-    background-attachment: fixed;
+main > section.imagem {
+  background-color: rgb(54, 54, 54);
+  color: white;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.699);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 section#img01 {
-    width: 100vw;
-    height: 500px;
-    background-image: url(../imagens/lines_oblique_form_shadow_dark_15662_3840x2160\ -\ Copia.jpg);
+  height: 500px;
+  background-image: url(../imagens/1.jpg);
 }
 
 section#img02 {
-    width: 100vw;
-    height: 500px;
-    background-image: url(../imagens/lines_oblique_form_shadow_dark_15662_3840x2160\ -\ Copia.jpg);
+  height: 500px;
+  background-image: url(../imagens/1.jpg);
+  border-radius: 0px 0px 10px 10px;
 }
 
 footer {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
+    background-color: #2d4453;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
 }
