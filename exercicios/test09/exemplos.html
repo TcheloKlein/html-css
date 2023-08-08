@@ -5,31 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>moderno</title>
     <link rel="stylesheet" href="estilo/style.css" />
-    <link rel="stylesheet" href="estilo/media-query.css">
+    <link rel="stylesheet" href="estilo/media-query.css" />
     <style>
-
-        section#foto1 {
-            width: 600px;
-    height: 500px;
-    margin: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-        }
-
-section#img01 {
-  height: 500px;
-  background-image: url(../test09/imagens/3.jpg);
-}
-
-section#img02 {
-  height: 500px;
-  background-image: url(../test09/imagens/3.jpg);
-  border-radius: 0px 0px 10px 10px;
-}
-
-    
+      .countainer {
+        height: 400px;
+        background-color: #253c59;
+        border-radius: 10px;
+      }
+      div#img01,
+      div#img02 {
+        height: 400px;
+        background-image: url(./imagens/2.jpg);
+        border-radius: 10px;
+      }
     </style>
-
   </head>
   <body>
     <header>
@@ -40,32 +29,41 @@ section#img02 {
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="exemplos.html">Exemplos</a></li>
-        <li><a href="#">Sobre</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
       </ul>
     </menu>
 
     <main>
-        <section id="foto1">
-          <div class="foto-container">
-                <div>
-                    <img src="imagens/2.jpg" alt="foto 1">
-                </div>
-        </section>
-        <section class="imagem" id="img01">
-          <p></p>
-        </section>
-        <section id="img2">
-          <p>
-            asdasdafdsbdagafdk nakngfadn gofngiadhng iagaigfdag[praigra]
-          </p>
-        </section>
-        <section class="imagem" id="img02">
-          <p></p>
-        </section>
+      <section class="countainer">
+        <div id="img01">
+          <a href="#">foto</a>
+        </div>
+      </section>
+      <section class="normal">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
+          obcaecati doloremque. Blanditiis, quas placeat est dolorum sit aut
+          minima voluptatibus fugit rerum at. Minus asperiores sit, eos
+          doloribus adipisci quia.
+        </p>
+      </section>
+      <section class="countainer">
+        <div id="img02">
+          <a href="#">Foto</a>
+        </div>
+      </section>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad culpa
+          velit illum optio enim est saepe incidunt? Esse odio ducimus
+          voluptates reprehenderit delectus, ab, dolor accusamus excepturi rerum
+          perferendis beatae?
+        </p>
+      </section>
     </main>
 
     <footer>
-        <p>Site criado Por Tchelo Klein.</p>
+      <p>Site criado Por Tchelo Klein.</p>
     </footer>
   </body>
 </html>

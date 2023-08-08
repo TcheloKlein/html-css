@@ -19,11 +19,17 @@ body,
 html {
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
   background-color: #253c59;
   color: white;
+  font-weight: bolder;
 }
 
 header > h1 {
@@ -34,42 +40,43 @@ header > h1 {
 }
 
 main {
-    width: 60vw;
-    background-color: white;
-    margin: auto;
-    border-radius: 10px;
+  width: 60vw;
+  background-color: #58788c;
+  margin: auto;
+  border-radius: 10px;
 }
 
 menu {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 menu > ul {
-    cursor: pointer
+  cursor: pointer;
 }
 
 menu > ul > li {
-    display: inline-block;
-    width: 150px;
+  display: inline-block;
+  width: 150px;
 }
 
 menu > ul > li > a {
-    padding: 5px;
-    display: grid;
-    text-decoration: none;
-    text-align: center;
-    background-color: #2d4453;
-    color: white;
-    border-radius: 10px;
-    border-top: px solid black;
+  padding: 5px;
+  display: grid;
+  text-decoration: none;
+  text-align: center;
+  background-color: #2d4453;
+  color: white;
+  border-radius: 10px;
 }
 
 menu > ul > li a:hover {
-    background-color: #406899;
-    color: white;
+  background-color: #406899;
+  color: white;
 }
 
 section {
@@ -87,12 +94,11 @@ section.normal#um {
 }
 
 section.normal#dois {
-    height: 400px;
-    text-align: center;
-    background-color: #58788c;
-    border-radius: 0px 0px 0px 0px;
-  }
-
+  height: 400px;
+  text-align: center;
+  background-color: #58788c;
+  border-radius: 0px 0px 0px 0px;
+}
 main > section > p {
   color: white;
   font-size: 20px;
@@ -118,7 +124,7 @@ section#img02 {
 }
 
 footer {
-    background-color: #2d4453;
+  background-color: #2d4453;
   color: white;
   text-align: center;
   font-weight: bolder;
