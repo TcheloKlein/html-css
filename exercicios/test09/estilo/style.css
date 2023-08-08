@@ -66,17 +66,19 @@ menu > ul > li {
 
 menu > ul > li > a {
   padding: 5px;
-  display: grid;
+  display: flow-root;
   text-decoration: none;
   text-align: center;
   background-color: #2d4453;
   color: white;
+  border: 5px solid #253c59;
   border-radius: 10px;
 }
 
 menu > ul > li a:hover {
   background-color: #406899;
   color: white;
+  transition: 1s;
 }
 
 section {
@@ -87,14 +89,14 @@ section {
 }
 
 section.normal#um {
-  height: 400px;
+  height: fit-content;
   text-align: center;
   background-color: #58788c;
   border-radius: 10px 10px 0px 0px;
 }
 
 section.normal#dois {
-  height: 400px;
+  height: fit-content;
   text-align: center;
   background-color: #58788c;
   border-radius: 0px 0px 0px 0px;
