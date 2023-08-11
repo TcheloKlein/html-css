@@ -1,23 +1,14 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 785px) {
+  menu > ul > li {
+    width: 10vw;
+    padding: 8px;
+  }
+
   main {
     width: 60vw;
     background-color: #58788c;
     margin: auto;
-    border-radius: 10px;
-  }
-  section.normal#um {
-    height: fit-content;
-    text-align: center;
-    background-color: #58788c;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  section.normal#dois {
-    height: fit-content;
-    text-align: center;
-    background-color: #58788c;
-    border-radius: 0px 0px 0px 0px;
   }
 }
