@@ -7,18 +7,16 @@
     <link rel="stylesheet" href="estilo/style.css" />
     <link rel="stylesheet" href="estilo/media-query.css" />
     <style>
-      #countainer1 {
-        background-color: #253c59;
-        border-radius: 10px 10px 0px 0px;
-      }
-      #countainer2 {
-        background-color: #253c59;
-      }
-      div#img01,
-      div#img02 {
-        height: 500px;
-        background-image: url(./imagens/2.jpg);
+      section.countainer {
+        display: inline-block;
+        border:  5px solid white;
         border-radius: 10px;
+        padding: auto;
+        width: 300px;
+        height: 300px;
+      }
+      section#con1, section#con2 {
+        background-image: url(./imagens/2.jpg);
       }
     </style>
   </head>
@@ -35,7 +33,7 @@
     </menu>
 
     <main>
-      <section class="countainer" id="countainer1">
+      <section class="countainer" id="con1">
         <div id="img01">
           <a href="#">foto</a>
         </div>
@@ -51,9 +49,14 @@
           quasi debitis consectetur officiis necessitatibus quas.
         </p>
       </section>
-      <section class="countainer" id="countainer2">
+      <section class="countainer" id="con2">
         <div id="img02">
-          <a href="#">Foto</a>
+          <a href="">foto</a>
+        </div>
+      </section>
+      <section class="countainer" id="con2">
+        <div id="img02">
+          <a href="">foto</a>
         </div>
       </section>
       <section class="normal">
